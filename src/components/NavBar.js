@@ -1,11 +1,12 @@
 import React from 'react'
 import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100">
+  <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <Link to='/' className="btn btn-ghost normal-case text-xl">Mi App</Link>
   </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
@@ -33,12 +34,12 @@ const NavBar = () => {
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li>
-          <a className="justify-between">
-            Profile
+          <Link to='/ram' className="justify-between">
+            Rick and Morty
             <span className="badge">New</span>
-          </a>
+          </Link>
         </li>
-        <li><a>Settings</a></li>
+        <li><Link to='/swapi'>StarWars</Link></li>
         <li><a>Logout</a></li>
       </ul>
     </div>

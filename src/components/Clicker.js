@@ -24,8 +24,8 @@ const Clicker = () => {
 
   return (
     <div>
-    <div className='m-5'>{ counter }</div>
-        <button onClick={ clickHandler } className='btn m-5'>Click aquí</button>
+    <div className="m-5">{ counter }</div>
+        <button onClick={ clickHandler } className="btn m-5">Click aquí</button>
     </div>
   )
 }
