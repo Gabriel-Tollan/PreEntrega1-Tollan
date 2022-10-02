@@ -23,7 +23,7 @@ const Clicker = () => {
 
 
   return (
-    <div>
+  <div>
     <div className="m-5">{ counter }</div>
         <button onClick={ clickHandler } className="btn m-5">Click aquí</button>
     </div>

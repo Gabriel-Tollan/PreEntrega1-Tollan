@@ -32,31 +32,6 @@ function App() {
      <Route path={'*'} element={<Error404/>}/>
     </Routes>
     </BrowserRouter>
-    <ItemListContainer greeting={'Mi Tienda'}/>
-    <AgeLabel/>
-    <Clicker/>
-    <ItemDetailContainer/>
-    <StarWarsContainer/>
-    <RMContainer/>
-    <NavBar/>
-    <RMDetail/>
-    <Error404/>
-    <h1 className="text-3xl font-bold underline">¡Hola Mundo!</h1>
-    <BoxForChildren>
-      <p>Parrafo con texto</p>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </BoxForChildren>
-    <h2 style={ styles }>Subtítulo</h2>
-    <li className='green'>elemento 1</li>
-    <li>elemento 2</li>
-    <li>elemento 3</li>
-    <span>otra cosa</span>
-    <strong>en negritas</strong>
-    <Saludo name='Miguel' age={23} />
-    <Saludo name='Jorge' age={18} ></Saludo>
-    <Saludo name='Robinson' age={25} ></Saludo>
     </>
   );
 }

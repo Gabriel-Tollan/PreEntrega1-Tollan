@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 
 const products = [
     {id: 1, name:'mouse', price:'20'},
@@ -6,6 +7,7 @@ const products = [
     {id: 3, name:'monitor', price:'250'},
 ]
 const ItemList = () => {
+    
     useEffect(() => {
       getProducts()
     }, [])
