@@ -4,7 +4,7 @@ import React from 'react'
 const CartWidget = () => {
 
   return (
-    <div className="cart-widget"></div>
+    <div>Mi lista de productos</div>
   )
 }
 
