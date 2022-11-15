@@ -22,7 +22,7 @@ export const UserForm = ( {setUser} ) => {
 const Order = () => {
 
   const [user, setUser] = useState({})
-  const items = [ 'iPhone', 'Samsung', 'Motorola' ] // Vienen de useContext()
+  const items = [ 'iPhone', 'Samsung', 'Motorola' ]
 
   const putOrder = () => {
     const order = {

@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { useFavs } from "../../context/FavContext"
+import { useFavs } from "../context/FavContext"
 
 const RMDetail = () => {
 

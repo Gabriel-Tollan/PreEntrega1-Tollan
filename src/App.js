@@ -1,10 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Saludo from './components/Saludo';
-import BoxForChildren from './components/BoxForChildren';
 import NavBar from './components/NavBar';
 import Clicker from './components/Clicker';
-import ItemListContainer from './components/shop/ItemListContainer';
 import StarWarsContainer from './components/starwars/StarWarsContainer';
 import RMContainer from './components/rickmorty/RMContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -12,13 +9,14 @@ import Error404 from './components/Error404';
 import RMDetail from './components/rickmorty/RMDetail';
 import ItemList from './components/shop2/ItemList';
 import ItemDetail from './components/shop2/ItemDetail';
-import { DarkmodeContext } from './context/DarkmodeContext';
+import { DarkmodeContext } from './components/context/DarkmodeContext';
 import { useState } from 'react';
-import { FavProvider } from './context/FavContext';
+import { FavProvider } from './components/context/FavContext';
 import CondicionalContainer from './components/condicional/CondicionalContainer';
-import Cart from './components/shop/Cart';
 import ListContainer from './components/firebase-example/ListContainer';
 import Order from './components/shop2/Order';
+import Cart from './components/shop/Cart';
+import { CartContextProvider } from './components/context/cartContext';
 
 function App() {
 
@@ -34,6 +32,7 @@ function App() {
   }
 
   return (
+  <CartContextProvider>
     <DarkmodeContext.Provider value={darkmode}>
       <FavProvider>
         <BrowserRouter>
@@ -55,6 +54,7 @@ function App() {
         </BrowserRouter>
       </FavProvider>
     </DarkmodeContext.Provider>
+  </CartContextProvider>
   );
 }
 

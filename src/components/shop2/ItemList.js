@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { DarkmodeContext } from '../../context/DarkmodeContext'
-import { products } from './data/products'
+import { DarkmodeContext } from '../context/DarkmodeContext'
+import { products } from './data/products.js'
 import ItemCard from './ItemCard'
 
 const ItemList = () => {

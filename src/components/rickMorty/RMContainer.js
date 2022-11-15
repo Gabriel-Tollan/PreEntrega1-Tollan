@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useFavs } from "../../context/FavContext"
+import { useFavs } from "../context/FavContext"
 import { RMCard } from "./RMCard"
 
 const RMContainer = () => {

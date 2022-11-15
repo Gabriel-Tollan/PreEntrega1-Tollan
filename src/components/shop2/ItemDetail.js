@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { products } from './data/products'
+import { products } from './data/products.js'
+
 
 const Loading = () => {
   return (
@@ -18,7 +19,7 @@ const Item = ( {item} ) => {
 }
 
 
-const ItemDetailContainer = () => {
+const ItemDetail = () => {
 
   const { id: itemId } = useParams()
   const [loading, setloading] = useState(true)
@@ -42,15 +43,15 @@ const ItemDetailContainer = () => {
 
   return (
     <>
-      {/* { !loading &&
+      {  !loading &&
           <div className='m-8'>
             <div>{ item.name }</div>
             <div>Price: { item.price }</div>
           </div>
-      } */}
+      } 
       { loading ? <Loading/> : <Item item={item}/> }
     </>
   )
 }
 
-export default ItemDetailContainer
+export default ItemDetail

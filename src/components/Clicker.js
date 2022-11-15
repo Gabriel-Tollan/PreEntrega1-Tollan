@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { DarkmodeContext } from '../context/DarkmodeContext'
+import { DarkmodeContext } from './context/DarkmodeContext'
 import ClickerExpensive from './ClickerExpensive'
 
 const Clicker = () => {
