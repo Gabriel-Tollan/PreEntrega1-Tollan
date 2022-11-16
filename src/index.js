@@ -15,9 +15,9 @@ const firebaseConfig = {
   measurementId: "G-Q41WWQ6EFB"
 };
 
+
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
